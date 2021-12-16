@@ -42,3 +42,46 @@
 #         print("The year is leap year")
 # else:
 #     print("The year is not leap year")
+# def add(a,b):
+#     return a+b
+# def sub(a,b):
+#     return a-b
+# def mul(a,b):
+#     return a*b
+# while True:
+#     choice = input("enter the option(1/2/3)")
+#     if choice in ( '1','2','3'):
+#         num1=float(input("enter the first number"))
+#         num2=float(input("enter the second number"))
+#     if choice == '1':
+#         print(num1,"+",num2,"=",add(num1,num2))
+#     elif choice == '2':
+#         print(num1,"-",num2,"=",sub(num1,num2))
+#     elif choice == '3':
+#         print(num1,"*",num2,"=",mul(num1,num2))
+#         next = input("do you ready for another calculation(y/n)")
+#         if next == "n":
+#             break
+#     else:
+#         print("invalid entry")
+# a = 1
+# while a < 10:
+#     print(a)
+# #     a=a+1
+# import random
+# n=10
+# To_be_guess = int(n*random.random()) +1
+# guess = 0
+# while guess != To_be_guess:
+#     guess = int(input("New number"))
+#     if guess > 0 :
+#         if guess > To_be_guess:
+#             print("number large")
+#         elif guess < To_be_guess:
+#             print("Numbe small")
+#     else:
+#         print ("sorry")
+#         break
+#
+# else:
+#     print("congo")
