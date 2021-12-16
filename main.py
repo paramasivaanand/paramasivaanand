@@ -136,16 +136,39 @@
 #     print (a,b)
 # fun2()
 #
-def vowels (n):
-    b=['a','e','i','o','u']
-    if (n in b):
-        return True
-    else:
-        return False
-x=vowels('a')
-print(x)
-
-
-
-
-
+# def vowels (n):
+#     b=['a','e','i','o','u']
+#     if (n in b):
+#         return True
+#     else:
+#         return False
+# x=vowels('a')
+# print(x)
+# data=(1,2,3,24)
+# print(data)
+# print(data[2])
+# print(data[1:])
+# print(1 in data)
+# print(1 not in data)
+# data1=(1,2,3,4,[1,4,5,6],"anand")
+# data1[4][2]=100
+# print(data1)
+# fruit=('apple')
+# n=10
+# for i in range(int(n)):
+#     fruit=(fruit,)
+# print(fruit)
+dataset={1,2,3}
+print(dataset)
+dataset.add(4)
+print(dataset)
+dataset.remove(1)
+print(dataset)
+dataset.update({4,5,6},[7,9,10])
+print(dataset)
+dataset.discard(2)
+print(dataset)
+dataset.discard(11)
+print(dataset)
+dataset.remove(3)
+print(dataset)
