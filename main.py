@@ -158,17 +158,46 @@
 # for i in range(int(n)):
 #     fruit=(fruit,)
 # print(fruit)
-dataset={1,2,3}
-print(dataset)
-dataset.add(4)
-print(dataset)
-dataset.remove(1)
-print(dataset)
-dataset.update({4,5,6},[7,9,10])
-print(dataset)
-dataset.discard(2)
-print(dataset)
-dataset.discard(11)
-print(dataset)
-dataset.remove(3)
-print(dataset)
+# dataset={1,2,3}
+# print(dataset)
+# dataset.add(4)
+# print(dataset)
+# dataset.remove(1)
+# print(dataset)
+# dataset.update({4,5,6},[7,9,10])
+# print(dataset)
+# dataset.discard(2)
+# print(dataset)
+# dataset.discard(11)
+# print(dataset)
+# dataset.remove(3)
+# print(dataset)
+
+class one :
+    def add (self,a,b):
+        c=a+b
+        print(c)
+        return c
+    def sub(self,a,b):
+        c=a-b
+        return c
+if __name__ =="__main__":
+    obj = one()
+    print(obj)
+    A=obj.add(1,2)
+    B=obj.sub(1,2)
+    print(A,B)
+
+class Test:
+    def __str__(self):
+        return"phyton"
+    def __int__(self):
+        return 10
+    def add(self,a,b):
+        c=a+b
+        return c
+obj=Test()
+A=obj.add(2,3)
+print(A)
+print(int(obj))
+
