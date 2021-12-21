@@ -173,31 +173,69 @@
 # dataset.remove(3)
 # print(dataset)
 
-class one :
-    def add (self,a,b):
-        c=a+b
-        print(c)
-        return c
-    def sub(self,a,b):
-        c=a-b
-        return c
-if __name__ =="__main__":
-    obj = one()
-    print(obj)
-    A=obj.add(1,2)
-    B=obj.sub(1,2)
-    print(A,B)
+# class one :
+#     def add (self,a,b):
+#         c=a+b
+#         print(c)
+#         return c
+#     def sub(self,a,b):
+#         c=a-b
+#         return c
+# if __name__ =="__main__":
+#     obj = one()
+#     print(obj)
+#     A=obj.add(1,2)
+#     B=obj.sub(1,2)
+#     print(A,B)
+#
+# class Test:
+#     def __str__(self):
+#         return"phyton"
+#     def __int__(self):
+#         return 10
+#     def add(self,a,b):
+#         c=a+b
+#         return c
+# obj=Test()
+# A=obj.add(2,3)
+# print(A)
+# print(int(obj))
 
-class Test:
-    def __str__(self):
-        return"phyton"
-    def __int__(self):
-        return 10
-    def add(self,a,b):
-        c=a+b
+class new:
+    c=0
+    def __init__(self):
+        self.b=int(input("enter the value of b"))
+        self.h=int(input("enter the value of h"))
+    def  areaoftriangle(self):
+        c=1%2*self.b*self.h
+        print("Result",c)
         return c
-obj=Test()
-A=obj.add(2,3)
-print(A)
-print(int(obj))
+    def areaofsquare(self):
+        s=self.b*self.b
+        print("Result",s)
+        return s
+    def add(self,a,b):
+        d=a+b
+        print("Result",d)
+        return d
+    def square(self,a,b):
+        sq=1%2*a*b
+        print("Result",sq)
+        return sq
+obj=new()
+tt=obj.areaoftriangle()
+ss=obj.areaofsquare()
+dd=obj.add(3,5)
+sa=obj.square(4,4)
+print(tt)
+print(ss)
+print(dd)
+print(sa)
+
+
+
+
+
+
+
 
