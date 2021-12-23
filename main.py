@@ -201,39 +201,53 @@
 # print(A)
 # print(int(obj))
 
-class new:
-    c=0
-    def __init__(self):
-        self.b=int(input("enter the value of b"))
-        self.h=int(input("enter the value of h"))
-    def  areaoftriangle(self):
-        c=1%2*self.b*self.h
-        print("Result",c)
-        return c
-    def areaofsquare(self):
-        s=self.b*self.b
-        print("Result",s)
-        return s
-    def add(self,a,b):
-        d=a+b
-        print("Result",d)
-        return d
-    def square(self,a,b):
-        sq=1%2*a*b
-        print("Result",sq)
-        return sq
-obj=new()
-tt=obj.areaoftriangle()
-ss=obj.areaofsquare()
-dd=obj.add(3,5)
-sa=obj.square(4,4)
-print(tt)
-print(ss)
-print(dd)
-print(sa)
+# class new:
+#     c=0
+#     def __init__(self):
+#         self.b=int(input("enter the value of b"))
+#         self.h=int(input("enter the value of h"))
+#     def  areaoftriangle(self):
+#         c=1%2*self.b*self.h
+#         print("Result",c)
+#         return c
+#     def areaofsquare(self):
+#         s=self.b*self.b
+#         print("Result",s)
+#         return s
+#     def add(self,a,b):
+#         d=a+b
+#         print("Result",d)
+#         return d
+#     def square(self,a,b):
+#         sq=1%2*a*b
+#         print("Result",sq)
+#         return sq
+# obj=new()
+# tt=obj.areaoftriangle()
+# ss=obj.areaofsquare()
+# dd=obj.add(3,5)
+# sa=obj.square(4,4)
+# print(tt)
+# print(ss)
+# print(dd)
+# print(sa)
 
-
-
+import Test1.func as t
+result=t.add(10,20)
+print(result)
+import Test1.func as s
+result=s.sub(23,10)
+print(result)
+import class1
+result=class1.add()
+print(result)
+import Test1.func as f
+from Test1.func import add
+result=add(10,10)
+print(result)
+from Test1.func import sub
+result=sub(10,5)
+print(result)
 
 
 
