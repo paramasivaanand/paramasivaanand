@@ -232,22 +232,61 @@
 # print(dd)
 # print(sa)
 
-import Test1.func as t
-result=t.add(10,20)
-print(result)
-import Test1.func as s
-result=s.sub(23,10)
-print(result)
-import class1
-result=class1.add()
-print(result)
-import Test1.func as f
-from Test1.func import add
-result=add(10,10)
-print(result)
-from Test1.func import sub
-result=sub(10,5)
-print(result)
+# import Test1.func as t
+# result=t.add(10,20)
+# print(result)
+# import Test1.func as s
+# result=s.sub(23,10)
+# print(result)
+# import class1
+# result=class1.add()
+# print(result)
+# import Test1.func as f
+# from Test1.func import add
+# result=add(10,10)
+# print(result)
+# from Test1.func import sub
+# result=sub(10,5)
+# print(result)
+class marks():
+    def __init__(self,Tamil,English,Maths,Science,Social):
+        self.a=Tamil
+        self.b=English
+        self.c=Maths
+        self.d=Science
+        self.e=Social
+
+    def avg(self):
+        avg=(self.a+self.b+self.c+self.d+self.e)//5
+        print("Average",avg)
+        grade=""
+        if avg >= 90:
+            grade="A"
+        elif(avg >= 80):
+            grade="B"
+        else:
+            grade="fail"
+        return grade
+
+Tamil=int(input("enter the mark of Tamil"))
+English=int(input("enter the mark of English"))
+Maths=int(input("enter the mark of maths"))
+Science=int(input("enter the mark of science"))
+social=int(input("enter the valur of social"))
+grade=marks(Tamil,English,Maths,Science,social)
+Marksavg=grade.avg()
+print(Marksavg)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
