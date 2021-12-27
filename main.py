@@ -248,34 +248,113 @@
 # from Test1.func import sub
 # result=sub(10,5)
 # print(result)
-class marks():
-    def __init__(self,Tamil,English,Maths,Science,Social):
-        self.a=Tamil
-        self.b=English
-        self.c=Maths
-        self.d=Science
-        self.e=Social
+# class marks():
+#     def __init__(self,Tamil,English,Maths,Science,Social):
+#         self.a=Tamil
+#         self.b=English
+#         self.c=Maths
+#         self.d=Science
+#         self.e=Social
+#
+#     def avg(self):
+#         avg=(self.a+self.b+self.c+self.d+self.e)//5
+#         print("Average",avg)
+#         grade=""
+#         if avg >= 90:
+#             grade="A"
+#         elif(avg >= 80):
+#             grade="B"
+#         else:
+#             grade="fail"
+#         return grade
+#
+# Tamil=int(input("enter the mark of Tamil"))
+# English=int(input("enter the mark of English"))
+# Maths=int(input("enter the mark of maths"))
+# Science=int(input("enter the mark of science"))
+# social=int(input("enter the valur of social"))
+# grade=marks(Tamil,English,Maths,Science,social)
+# Marksavg=grade.avg()
+# # print(Marksavg)
+# ###########inheritenc|single########
+# class parent():
+#     def add(self,a,b):
+#         return a+b
+# class child(parent):
+#     def sub(self,a,b):
+#         return a-b
+# obj=child()
+# x=obj.add(1,2)
+# y=obj.sub(3,2)
+# print(x,y)
+# ############inheritence|multiple child#######
+# class parent1():
+#     def add(self,a,b):
+#         return a+b
+# class child1(parent1):
+#     def mul(self,a,b):
+#         return a*b
+# class child2(parent1):
+#     def div(self,a,b):
+#         return a//b
+# obj1=child1()
+# obj2=child2()
+# aa=obj1.add(3,4)
+# bb=obj1.mul(5,4)
+# cc=obj2.div(25,5)
+# print(aa,bb,cc)
+# ###############inheritence|multiple parent#########
+# class parent3():
+#     def add(self,a,b):
+#         return a+b
+# class parent4():
+#     def sub(self,a,b):
+#         return a-b
+# class child3(parent3,parent4):
+#     def mul(self,a,b):
+#         return a*b
+# obj3=child3()
+# dd=obj3.add(5,5)
+# ee=obj3.mul(15,5)
+# ff=obj3.sub(10,5)
+# print(dd,ee,ff)
+#
+# ################inheritence|multilevel#######
+# class university():
+#     def add(self,a,b):
+#         return a+b
+# class college(university):
+#     def mul(self,a,b):
+#         return a*b
+# class department(college):
+#     def div(self,a,b):
+#         return a//b
+# class classroom(department):
+#     def sub(self,a,b):
+#         return a-b
+# obj4=classroom()
+# multi=obj4.add(5,4)
+# print(multi)
+####################inheritence|call parent form child############
+class test():
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def add(self):
+        c=self.a+self.b
+        print(c)
+class test1(test):
+    def __init__(self,a,b,c,d):
+        self.c=c
+        self.d=d
+        super().__init__(a,b)
+    def mul(self):
+      self.c*self.d
+obj5=test1(10,20,49,56)
+ab=obj5.add()
+print(ab)
 
-    def avg(self):
-        avg=(self.a+self.b+self.c+self.d+self.e)//5
-        print("Average",avg)
-        grade=""
-        if avg >= 90:
-            grade="A"
-        elif(avg >= 80):
-            grade="B"
-        else:
-            grade="fail"
-        return grade
 
-Tamil=int(input("enter the mark of Tamil"))
-English=int(input("enter the mark of English"))
-Maths=int(input("enter the mark of maths"))
-Science=int(input("enter the mark of science"))
-social=int(input("enter the valur of social"))
-grade=marks(Tamil,English,Maths,Science,social)
-Marksavg=grade.avg()
-print(Marksavg)
 
 
 
