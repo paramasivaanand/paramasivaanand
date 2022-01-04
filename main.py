@@ -336,23 +336,51 @@
 # multi=obj4.add(5,4)
 # print(multi)
 ####################inheritence|call parent form child############
-class test():
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-    def add(self):
-        c=self.a+self.b
-        print(c)
-class test1(test):
-    def __init__(self,a,b,c,d):
-        self.c=c
-        self.d=d
-        super().__init__(a,b)
-    def mul(self):
-      self.c*self.d
-obj5=test1(10,20,49,56)
-ab=obj5.add()
-print(ab)
+# class test():
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def add(self):
+#         c=self.a+self.b
+#         print(c)
+# class test1(test):
+#     def __init__(self,a,b,c,d):
+#         self.c=c
+#         self.d=d
+#         super().__init__(a,b)
+#     def mul(self):
+#       self.c*self.d
+# obj5=test1(10,20,49,56)
+# ab=obj5.add()
+# bb=obj5.mul()
+# print(ab)
+# print(bb)
+################################################Ploymorphism#####
+#
+# class network():
+#     def basic(self):
+#         print("CCNA")
+#     def advanced(self):
+#         print("CCNP")
+# class program():
+#     def basic(self):
+#         print("java")
+#     def advanced(self):
+#         print("phyton")
+# net = network()
+# pro = program()
+# for i in (net,pro):
+#     i.basic()
+#     i.advanced()
+#################################Overloading#############
+# def add(a,b):
+#     return a+b
+# a=add(2,3)
+# def add(a,b,c):
+#     return a+b+c
+# b=add(2,3,4)
+# print(a)
+# print(b)
 
 
 
