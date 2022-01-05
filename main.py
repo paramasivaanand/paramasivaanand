@@ -381,6 +381,33 @@
 # b=add(2,3,4)
 # print(a)
 # print(b)
+#####################overloading args#########
+# def add(datatype,*args):
+#     sum=0
+#     if (datatype =='int'):
+#         for i in args:
+#             sum=i+sum
+#         return sum
+#     if (datatype=='str'):
+#         return "phyton"
+# b=add('int',10,20,10,50)
+# c=add('str')
+# print(b)
+# print(c)
+##################overriding########
+class anand():
+    def vaishu(self):
+        return 'dharshan'
+class anand1(anand):
+    def vaishu(self):
+        return 'surya'
+father=anand()
+fatherr=anand1()
+a=father.vaishu()
+b=fatherr.vaishu()
+print(a)
+print(b)
+###############################
 
 
 
