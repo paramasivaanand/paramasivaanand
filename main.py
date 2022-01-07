@@ -407,7 +407,16 @@ a=father.vaishu()
 b=fatherr.vaishu()
 print(a)
 print(b)
-###############################
+###############################exception handling######try,except,finally and raise
+def add(a,b):
+    try :
+        c=a+b ###if we define any value other than a and b it will go to exception blog ex:d
+        print(c)
+    except Exception as e:
+        print(e)
+add(1,2)
+
+
 
 
 
