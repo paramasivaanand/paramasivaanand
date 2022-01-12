@@ -395,26 +395,52 @@
 # print(b)
 # print(c)
 ##################overriding########
-class anand():
-    def vaishu(self):
-        return 'dharshan'
-class anand1(anand):
-    def vaishu(self):
-        return 'surya'
-father=anand()
-fatherr=anand1()
-a=father.vaishu()
-b=fatherr.vaishu()
-print(a)
-print(b)
+# class anand():
+#     def vaishu(self):
+#         return 'dharshan'
+# class anand1(anand):
+#     def vaishu(self):
+#         return 'surya'
+# father=anand()
+# fatherr=anand1()
+# a=father.vaishu()
+# b=fatherr.vaishu()
+# print(a)
+# print(b)
 ###############################exception handling######try,except,finally and raise
-def add(a,b):
-    try :
-        c=a+b ###if we define any value other than a and b it will go to exception blog ex:d
-        print(c)
-    except Exception as e:
-        print(e)
-add(1,2)
+# def add(a,b):
+#     try :
+#         c=a+b ###if we define any value other than a and b it will go to exception blog example:d
+#         print(c)
+#     except Exception as e:
+#         print(e)
+# add(1,2)
+############################file handling######
+class handling():
+    def red(self):
+        A=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
+        rd=A.read()
+        A.close()
+        return rd
+    def wri(self):
+        W=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
+        W.write("surya/n dharshan/n anand/n")
+        W.close()
+    def apn(self):
+        d=open("C:\\Users\\HP\\Desktop\\phy.txt",'a')
+        d.write("vaishnavi")
+        d.close()
+obj=handling()
+# obj.wri()
+obj.apn()
+nn=obj.red()
+print(nn)
+
+
+
+
+
+
 
 
 
