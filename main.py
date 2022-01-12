@@ -416,29 +416,56 @@
 #         print(e)
 # add(1,2)
 ############################file handling######
-class handling():
-    def red(self):
-        A=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
-        rd=A.read()
-        A.close()
-        return rd
-    def wri(self):
-        W=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
-        W.write("surya/n dharshan/n anand/n")
-        W.close()
-    def apn(self):
-        d=open("C:\\Users\\HP\\Desktop\\phy.txt",'a')
-        d.write("vaishnavi")
-        d.close()
-obj=handling()
-# obj.wri()
-obj.apn()
-nn=obj.red()
-print(nn)
+# class handling():
+#     def red(self):
+#         A=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
+#         rd=A.read()
+#         A.close()
+#         return rd
+#     def wri(self):
+#         W=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
+#         W.write("surya/n dharshan/n anand/n")
+#         W.close()
+#     def apn(self):
+#         d=open("C:\\Users\\HP\\Desktop\\phy.txt",'a')
+#         d.write("vaishnavi")
+#         d.close()
+# obj=handling()
+# # obj.wri()
+# obj.apn()
+# nn=obj.red()
+# print(nn)
+##################################################
+# class newfile():
+#     def redd(self):
+#         r=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
+#         rrd=r.read()
+#         r.close()
+#         return rrd
+#     def rw(self):
+#         w=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
+#         w.write("Surya Dharshan")
+#         w.close()
+# obj=newfile()
+# nw=obj.redd()
+# print(nw)
+# rww=obj.rw()
 
 
 
+r=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
+rrd=r.read()
+r.close()
 
+
+rrd=rrd.split("\n") ##### splite used to convert it to array
+
+rrd=rrd[::-1] ####reverse predefined fucniton in phyton
+print(rrd)
+w=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
+for i in rrd:
+    w.write(i+"\n")
+w.close()
 
 
 
