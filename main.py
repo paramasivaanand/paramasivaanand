@@ -453,19 +453,35 @@
 
 
 
-r=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
-rrd=r.read()
-r.close()
+# r=open("C:\\Users\\HP\\Desktop\\phy.txt",'r')
+# rrd=r.read()
+# r.close()
+#
+#
+# rrd=rrd.split("\n") ##### splite used to convert it to array
+#
+# rrd=rrd[::-1] ####reverse predefined fucniton in phyton
+# print(rrd)
+# w=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
+# for i in rrd:
+#     w.write(i+"\n")
+# w.close()
 
+# mylist=[['s.no','name','age','citloy'],[1,'Anand',    34,'   chennai'],[2,'Vaishu',27,'chennai'],[3,'Surya',2,'chennai']]
+# for a in mylist:
+#
+#     for b in a:
+#         print(b,end='\t')
+#     print()
 
-rrd=rrd.split("\n") ##### splite used to convert it to array
-
-rrd=rrd[::-1] ####reverse predefined fucniton in phyton
-print(rrd)
-w=open("C:\\Users\\HP\\Desktop\\phy.txt",'w')
-for i in rrd:
-    w.write(i+"\n")
-w.close()
+mylist1 = []
+a = int(input("enter the number of elements:"))
+for m in range(0,a):
+    element = [input(),input(),int(input())]
+    mylist1.append(element)
+for b in mylist1:
+    print('name'+'\t'+'city'+'\t'+'age',end='\n')
+    print(b,end='\n')
 
 
 
