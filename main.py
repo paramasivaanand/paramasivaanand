@@ -474,14 +474,35 @@
 #         print(b,end='\t')
 #     print()
 
-mylist1 = []
-a = int(input("enter the number of elements:"))
-for m in range(0,a):
-    element = [input(),input(),int(input())]
-    mylist1.append(element)
-for b in mylist1:
-    print('name'+'\t'+'city'+'\t'+'age',end='\n')
-    print(b,end='\n')
+# mylist1 = []
+# a = int(input("enter the number of elements:"))
+# for m in range(0,a):
+#     element = [input(),input(),int(input())]
+#     mylist1.append(element)
+# print('name'+'\t'+'city'+'\t'+'age',end='\n')
+# for b in mylist1:
+#     for j in b:
+#         print(j,end=' ')
+#     print()
+
+##############args and kwargs########
+def num (*args):
+    sum = 0
+    for n in args:
+        sum+=n
+    return sum
+tt=num(12,34,67)
+print(tt)
+def ite (**data):
+    for key,value in data.items():
+        print("{},{}".format(key,value))
+result = ite(firstname='anand',age =34,lastname = 'c',pincode=627811)
+print(result)
+####################API##restAPI####import json###Json.loads####json.dumps
+
+
+
+
 
 
 
