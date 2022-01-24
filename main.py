@@ -486,19 +486,58 @@
 #     print()
 
 ##############args and kwargs########
-def num (*args):
-    sum = 0
-    for n in args:
-        sum+=n
-    return sum
-tt=num(12,34,67)
-print(tt)
-def ite (**data):
-    for key,value in data.items():
-        print("{},{}".format(key,value))
-result = ite(firstname='anand',age =34,lastname = 'c',pincode=627811)
-print(result)
-####################API##restAPI####import json###Json.loads####json.dumps
+# def num (*args):
+#     sum = 0
+#     for n in args:
+#         sum+=n
+#     return sum
+# tt=num(12,34,67)
+# print(tt)
+# def ite (**data):
+#     for key,value in data.items():
+#         print("{},{}".format(key,value))
+# result = ite(firstname='anand',age =34,lastname = 'c',pincode=627811)
+# print(result)
+####################API##restAPI####import json###Json.loads####json.dumps+
+
+#####lamda##Assert###List comprehension###dist comprehension###map ### filter ### Chr(Ascii)
+x=lambda a,b:a+b
+print(x)
+print(x(10,20))
+
+def ad (n):
+    return lambda a:n*a
+a=ad(3)
+n=a(10)
+print(n)
+
+def avg (n):
+    assert len(n)!=0,"empty list"
+    return sum(n)/len(n)
+x=avg([1,2,5,8,10])
+print(x)
+
+x=[i for i in range(100) if i%10==0]
+print(x)
+
+x={i:chr(i) for i in range(91) if (i > 64)}
+print(x.keys())
+print(x.values())
+
+def name (n):
+    return n*n
+x=map(name,[1,2,3,4,5])
+print(list(x))
+
+def vowels (n):
+    a = ['a','e','i','o','u']
+    if n in a:
+        return True
+    else:
+        return False
+x=filter(vowels,['a','b','c','d','e','f','g','h','i','j'])
+print(list(x))
+
 
 
 
