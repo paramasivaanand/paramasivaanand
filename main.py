@@ -501,42 +501,85 @@
 ####################API##restAPI####import json###Json.loads####json.dumps+
 
 #####lamda##Assert###List comprehension###dist comprehension###map ### filter ### Chr(Ascii)
-x=lambda a,b:a+b
-print(x)
-print(x(10,20))
+# x=lambda a,b:a+b
+# print(x)
+# print(x(10,20))
+#
+# def ad (n):
+#     return lambda a:n*a
+# a=ad(3)
+# n=a(10)
+# print(n)
+#
+# def avg (n):
+#     assert len(n)!=0,"empty list"
+#     return sum(n)/len(n)
+# x=avg([1,2,5,8,10])
+# print(x)
+#
+# x=[i for i in range(100) if i%10==0]
+# print(x)
+#
+# x={i:chr(i) for i in range(91) if (i > 64)}
+# print(x.keys())
+# print(x.values())
+#
+# def name (n):
+#     return n*n
+# x=map(name,[1,2,3,4,5])
+# print(list(x))
+#
+# def vowels (n):
+#     a = ['a','e','i','o','u']
+#     if n in a:
+#         return True
+#     else:
+#         return False
+# x=filter(vowels,['a','b','c','d','e','f','g','h','i','j'])
+# print(list(x))
 
-def ad (n):
-    return lambda a:n*a
-a=ad(3)
-n=a(10)
-print(n)
+#############################Tkinter###########################
+import tkinter as tk
+from tkinter import *
+root = tk.Tk()
+root.geometry('500x500')
+root.title("Registration form")
 
-def avg (n):
-    assert len(n)!=0,"empty list"
-    return sum(n)/len(n)
-x=avg([1,2,5,8,10])
-print(x)
+Fullname=StringVar()
+Email=StringVar()
+var = IntVar()
+c=StringVar()
+var1= IntVar()
 
-x=[i for i in range(100) if i%10==0]
-print(x)
+label_0 = Label(root, text="Registration form",width=20,font=("bold", 20))
+label_0.place(x=90,y=53)
+label_1 = Label(root, text="Fullname",width=20,font=("bold",10))
+label_1.place(x=80,y=130)
+entry_1 = Entry(root,textvariable=Fullname)
+entry_1.place(x=240,y=130)
+label_2=Label(root, text="Email",width=20,font=("bold",10))
+label_2.place(x=68,y=180)
+entry_2 = Entry(root,textvariable=Email)
+entry_2.place(x=240,y=180)
+label_3=Label(root, text="gender",width=20,font=("bold",10))
+label_3.place(x=70,y=230)
+Radiobutton(root, text="Male",padx = 5, variable=var, value=1).place(x=235,y=230)
+Radiobutton(root, text="Female",padx = 20, variable=var, value=2).place(x=290,y=230)
+label_4=Label(root,text="country",width=20,font=("bold",10))
+label_4.place(x=70,y=280)
+list1 = ['Canada','India','UK','Nepal','Iceland','South Africa'];
+droplist=OptionMenu(root,c, *list1)
+droplist.config(width=15)
+c.set('select your country')
+droplist.place(x=240,y=280)
+label_5 = Label(root, text="Programming",width=20,font=("bold", 10))
+label_5.place(x=85,y=330)
+var2= IntVar()
+Checkbutton(root, text="java", variable=var1).place(x=235,y=330)
+Checkbutton(root, text="python", variable=var2).place(x=290,y=330)
+root.mainloop()
 
-x={i:chr(i) for i in range(91) if (i > 64)}
-print(x.keys())
-print(x.values())
 
-def name (n):
-    return n*n
-x=map(name,[1,2,3,4,5])
-print(list(x))
-
-def vowels (n):
-    a = ['a','e','i','o','u']
-    if n in a:
-        return True
-    else:
-        return False
-x=filter(vowels,['a','b','c','d','e','f','g','h','i','j'])
-print(list(x))
 
 
 
