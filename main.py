@@ -539,50 +539,92 @@
 # print(list(x))
 
 #############################Tkinter###########################
-import tkinter as tk
-from tkinter import *
-root = tk.Tk()
-root.geometry('500x500')
-root.title("Registration form")
+# import tkinter as tk
+# from tkinter import *
+# import pymysql
+#
+# root = tk.Tk()
+# root.geometry('500x500')
+# root.title("Registration form")
+#
+# Fullname=StringVar()
+# Email=StringVar()
+# var = IntVar()
+# c=StringVar()
+# var1= IntVar()
+#
+# def database():
+#    name1=Fullname.get()
+#    email=Email.get()
+#    gender=var.get()
+#    country=c.get()
+#    prog=var1.get()
+#    conn = pymysql.connect('Registration form.db')
+#    with conn:
+#       cur=conn.cursor()
+#    cur.execute('CREATE TABLE IF NOT EXISTS Student (Fullname TEXT,Email TEXT,Gender TEXT,country TEXT,Programming TEXT)')
+#    cur.execute('INSERT INTO Student (FullName,Email,Gender,country,Programming) VALUES(?,?,?,?,?)',(name1,email,gender,country,prog,))
+#    conn.commit()
+#
+# label_0 = Label(root, text="Registration form",width=20,font=("bold", 20))
+# label_0.place(x=90,y=53)
+# label_1 = Label(root, text="Fullname",width=20,font=("bold",10))
+# label_1.place(x=80,y=130)
+# entry_1 = Entry(root,textvariable=Fullname)
+# entry_1.place(x=240,y=130)
+# label_2=Label(root, text="Email",width=20,font=("bold",10))
+# label_2.place(x=68,y=180)
+# entry_2 = Entry(root,textvariable=Email)
+# entry_2.place(x=240,y=180)
+# label_3=Label(root, text="gender",width=20,font=("bold",10))
+# label_3.place(x=70,y=230)
+# Radiobutton(root, text="Male",padx = 5, variable=var, value=1).place(x=235,y=230)
+# Radiobutton(root, text="Female",padx = 20, variable=var, value=2).place(x=290,y=230)
+# label_4=Label(root,text="country",width=20,font=("bold",10))
+# label_4.place(x=70,y=280)
+# list1 = ['Canada','India','UK','Nepal','Iceland','South Africa'];
+# droplist=OptionMenu(root,c, *list1)
+# droplist.config(width=15)
+# c.set('select your country')
+# droplist.place(x=240,y=280)
+# label_5 = Label(root, text="Programming",width=20,font=("bold", 10))
+# label_5.place(x=85,y=330)
+# var2= IntVar()
+# Checkbutton(root, text="java", variable=var1).place(x=235,y=330)
+# Checkbutton(root, text="python", variable=var2).place(x=290,y=330)
+# Button(root, text='Submit',width=20,bg='brown',fg='white',command=database).place(x=180,y=380)
+# root.mainloop()
+# import os
+# cwd = os.getcwd()
+# lst = os.listdir()
+# print(cwd)
+# print(lst)
+# print(os.name)
 
-Fullname=StringVar()
-Email=StringVar()
-var = IntVar()
-c=StringVar()
-var1= IntVar()
 
-label_0 = Label(root, text="Registration form",width=20,font=("bold", 20))
-label_0.place(x=90,y=53)
-label_1 = Label(root, text="Fullname",width=20,font=("bold",10))
-label_1.place(x=80,y=130)
-entry_1 = Entry(root,textvariable=Fullname)
-entry_1.place(x=240,y=130)
-label_2=Label(root, text="Email",width=20,font=("bold",10))
-label_2.place(x=68,y=180)
-entry_2 = Entry(root,textvariable=Email)
-entry_2.place(x=240,y=180)
-label_3=Label(root, text="gender",width=20,font=("bold",10))
-label_3.place(x=70,y=230)
-Radiobutton(root, text="Male",padx = 5, variable=var, value=1).place(x=235,y=230)
-Radiobutton(root, text="Female",padx = 20, variable=var, value=2).place(x=290,y=230)
-label_4=Label(root,text="country",width=20,font=("bold",10))
-label_4.place(x=70,y=280)
-list1 = ['Canada','India','UK','Nepal','Iceland','South Africa'];
-droplist=OptionMenu(root,c, *list1)
-droplist.config(width=15)
-c.set('select your country')
-droplist.place(x=240,y=280)
-label_5 = Label(root, text="Programming",width=20,font=("bold", 10))
-label_5.place(x=85,y=330)
-var2= IntVar()
-Checkbutton(root, text="java", variable=var1).place(x=235,y=330)
-Checkbutton(root, text="python", variable=var2).place(x=290,y=330)
-root.mainloop()
+import datetime
 
+dateti=datetime.datetime.now()
+datety=datetime.date.today()
+print(dateti)
+print(datety)
+print(dir(datetime))
 
+from datetime import date
+today = date.today()
+print(today)
 
+from datetime import *
+a=time()
+b=time(11,30,40)
+c=time(hour=11,minute=15,second=13,microsecond=15)
+print(a)
+print(b)
+print(c)
 
-
+from datetime import time
+a=time(11,30,15)
+print(a.hour)
 
 
 
