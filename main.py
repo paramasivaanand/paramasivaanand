@@ -626,6 +626,19 @@ from datetime import time
 a=time(11,30,15)
 print(a.hour)
 
+from datetime import datetime
+now=datetime.now()
+t=now.strftime("%H:%M:%S")
+print(t)
+
+from datetime import datetime
+import pytz
+tz_NY = pytz.timezone('America/New_York')
+datetime_NY = datetime.now(tz_NY)
+print(datetime_NY)
+
+
+
 
 
 
