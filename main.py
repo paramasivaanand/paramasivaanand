@@ -85,3 +85,45 @@
 #
 # else:
 #     print("congo")
+
+# mylist = []
+# heading = ['Name','city','Age']
+# a = int(input("enter the element count:"))
+# for b in range(0,a):
+#     element =[input(),input(),int(input())]
+#     mylist.append(element)
+# for c in mylist:
+#     print(heading,end='\n')
+#     print( c,end='\n')
+#     print()
+
+# import tkinter as tk
+# from tkinter import *
+# anand = tk.Tk()
+# anand.geometry('500x500')
+# anand.title("anand")
+# label_1=Label(anand,text="vaishuanand",width=100,font=100)
+# label_1.place(x=100,y=150)
+# anand.mainloop()
+# import os
+# cwd=os.getcwd()
+# print(cwd)
+import datetime
+from datetime import *
+class datfile():
+    def timdat(self):
+        op=open("C:\\Users\\ADMIN\\Desktop\\new file.txt",'w')
+        op.write("anand")
+        op.close()
+
+    def timdat1(self):
+        on=open("C:\\Users\\ADMIN\\Desktop\\new file.txt",'r')
+        nn=on.read()
+        on.close()
+        return nn
+obj=datfile()
+nw=obj.timdat()
+nw1=obj.timdat1()
+print(nw)
+print(nw1)
+
