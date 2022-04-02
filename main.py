@@ -602,44 +602,58 @@
 # print(os.name)
 
 
-import datetime
+# import datetime
+# import json
+#
+# dateti=datetime.datetime.now()
+# datety=datetime.date.today()
+# print(dateti)
+# print(datety)
+# print(dir(datetime))
+#
+# from datetime import date
+# today = date.today()
+# print(today)
+#
+# from datetime import *
+# a=time()
+# b=time(11,30,40)
+# c=time(hour=11,minute=15,second=13,microsecond=15)
+# print(a)
+# print(b)
+# print(c)
+#
+# from datetime import time
+# a=time(11,30,15)
+# print(a.hour)
+#
+# from datetime import datetime
+# now=datetime.now()
+# t=now.strftime("%H:%M:%S")
+# print(t)
+#
+# from datetime import datetime
+# import pytz
+# tz_NY = pytz.timezone('America/New_York')
+# datetime_NY = datetime.now(tz_NY)
+# print(datetime_NY)
+#
+# a="{a:12,:b:2}"
 
-dateti=datetime.datetime.now()
-datety=datetime.date.today()
-print(dateti)
-print(datety)
-print(dir(datetime))
 
-from datetime import date
-today = date.today()
-print(today)
-
-from datetime import *
-a=time()
-b=time(11,30,40)
-c=time(hour=11,minute=15,second=13,microsecond=15)
-print(a)
-print(b)
-print(c)
-
-from datetime import time
-a=time(11,30,15)
-print(a.hour)
-
-from datetime import datetime
-now=datetime.now()
-t=now.strftime("%H:%M:%S")
-print(t)
-
-from datetime import datetime
-import pytz
-tz_NY = pytz.timezone('America/New_York')
-datetime_NY = datetime.now(tz_NY)
-print(datetime_NY)
+url="https://www.skechers.in/on/demandware.store/Sites-skechersin-Site/default/Product-Variation?dwvar_14929_size=7&pid=14929&quantity=1"
+import requests
+import json
+# a=requests.get(url)
+#
+# aa=json.loads(a.content)
+#
+# print(aa["product"]["uuid"])
 
 
-
-
+b=requests.get(url)
+bb=json.loads(b.content)
+print(bb["product"])
 
 
 
