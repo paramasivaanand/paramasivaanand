@@ -650,11 +650,13 @@ import json
 #
 # print(aa["product"]["uuid"])
 
-
 b=requests.get(url)
 bb=json.loads(b.content)
 print(bb["product"])
 
+c=requests.get(url)
+cc=json.loads(c.content)
+print(cc["action"])
 
 
 
